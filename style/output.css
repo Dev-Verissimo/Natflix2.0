@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 80px;
+  background-color: #14141442;
+}
+body .container img {
+  width: 170px;
+  height: 100px;
+}
+body .container #container-firstChild {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+}
+@media (max-width: 900px) {
+  body .container #container-firstChild {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px 0 0;
+  }
+}
+body .container nav {
+  min-height: 100%;
+  display: flex;
+  gap: 20px;
+}
+body .container nav a {
+  color: white;
+  font-weight: 600;
+  display: block;
+  line-height: 80px;
+}
+body .container nav a:hover {
+  color: aqua;
+}
+@media (max-width: 900px) {
+  body .container nav {
+    display: none;
+  }
+}
+body .container div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+}
+body .container div:last-child img {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 900px) {
+  body .container div:last-child {
+    display: none;
+  }
+}
+body #sectionOne {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.164)), url("../img/capa-house.jpg");
+  background-size: cover;
+  height: 400px;
+}
+body #sectionOne main {
+  padding: 0 10px;
+  max-width: 45%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body #sectionOne main h1 {
+  font-size: 40px;
+}
+body #sectionOne main .button {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 4px;
+}
+body #sectionOne main .button button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  gap: 5px;
+  transition: 0.3 ease all;
+}
+body #sectionOne main .button button.assistir:hover {
+  background-color: rgba(255, 255, 255, 0.719);
+}
+body #sectionOne main .button button.moreInfo {
+  background-color: #928f8f98;
+  color: white;
+}
+body #sectionOne main .button button.moreInfo:hover {
+  background-color: #928f8f75;
+}
+body #sectionOne main .box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  #logo {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
